@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomdemo
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: 62160d85cc6cda363c383502805bfc3c68f2450bc61bf827824ab3c60a664790
+  access-token-expiry: 900000
+  refresh-token-expiry: 604800000
