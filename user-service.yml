@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomdemo
+    username: root
+    password: "{cipher}40da26e178bf628826ea2552200d5be647a6e19dd9e4ab9bc3df50844c7e7947"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+jwt:
+  secret: 62160d85cc6cda363c383502805bfc3c68f2450bc61bf827824ab3c60a664790
+  expiration: 86400000
