@@ -10,7 +10,7 @@ spring:
       routes:
         # Auth Service Route
         - id: auth-service
-          uri: lb://AUTH-SERVICE
+          uri: lb://auth-service
           predicates:
             - Path=/auth/**
         # User Service Route
